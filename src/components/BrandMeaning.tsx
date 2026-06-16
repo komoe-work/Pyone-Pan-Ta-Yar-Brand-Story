@@ -5,7 +5,6 @@
 
 import { motion } from "motion/react";
 import { Coffee, Lightbulb, Sun, BookOpen } from "lucide-react";
-import BookPreviewer from "./BookPreviewer";
 
 export default function BrandMeaning() {
   const meanings = [
@@ -85,9 +84,6 @@ export default function BrandMeaning() {
             );
           })}
         </div>
-
-        {/* Tactical interactive previewer catalog */}
-        <BookPreviewer />
 
       </div>
     </section>
