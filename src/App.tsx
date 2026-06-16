@@ -247,7 +247,7 @@ export default function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="font-serif font-bold text-2xl sm:text-3xl md:text-4xl text-forest-900 leading-snug mb-6 font-burmese"
+              className="font-serif font-bold text-lg sm:text-2xl md:text-3xl lg:text-4xl text-forest-900 leading-snug mb-6 font-burmese whitespace-nowrap"
             >
               “သင့်စိတ်အတွက် စာမျက်နှာတစ်ရွက်ကို ဒီနေ့ စတင်ဖွင့်လှစ်ပါ”
             </motion.h2>
