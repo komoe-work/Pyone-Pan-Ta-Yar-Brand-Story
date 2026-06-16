@@ -64,7 +64,7 @@ export default function NewsletterForm() {
   };
 
   return (
-    <section className="py-24 bg-forest-900 text-cream-50 relative z-10 overflow-hidden border-t border-forest-800 font-sans">
+    <section id="contact" className="py-24 bg-forest-900 text-cream-50 relative z-10 overflow-hidden border-t border-forest-800 font-sans">
       {/* Decors */}
       <div className="absolute left-10 top-1/4 w-72 h-72 bg-rust-400/10 rounded-full blur-3xl" />
       <div className="absolute right-10 bottom-1/4 w-72 h-72 bg-forest-500/15 rounded-full blur-3xl" />
