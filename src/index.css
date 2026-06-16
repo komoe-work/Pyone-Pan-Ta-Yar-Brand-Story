@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Noto+Sans+Myanmar:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Myanmar", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Merriweather", "Playfair Display", serif;
+  --font-burmese: "Noto Sans Myanmar", sans-serif;
+
+  --color-cream-50: #FAF6EE;
+  --color-cream-100: #F6F0E2;
+  --color-cream-200: #EBE4D5;
+  --color-cream-300: #D2C7B3;
+
+  --color-forest-500: #2C4C38;
+  --color-forest-800: #1A3022;
+  --color-forest-900: #101F15;
+
+  --color-rust-400: #A64F2D;
+  --color-rust-500: #8C3A1A;
+  --color-rust-600: #6E2C12;
+}
+
+/* Custom scrollbar matching the analog aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #D2C7B3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8C3A1A;
+}
+
+/* Gentle drifting particle animations */
+@keyframes delicateDrift {
+  0% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translateY(-30px) translateX(15px) rotate(180deg);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-60px) translateX(0px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.ambient-particle {
+  position: absolute;
+  background: radial-gradient(circle, rgba(235, 196, 120, 0.45) 0%, rgba(235,196,120,0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: delicateDrift 15s infinite ease-in-out;
+}
+
+/* Page flip perspective */
+.page-flip-container {
+  perspective: 1200px;
+}
+
+.book-spine-clip {
+  box-shadow: -12px 12px 24px rgba(0,0,0,0.12);
+}
+
