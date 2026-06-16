@@ -13,7 +13,7 @@ export default function Timeline() {
   const data = timelineData[activeEra];
 
   return (
-    <section id="journey" class="py-24 bg-cream-100/60 border-y border-cream-200 relative z-10 font-burmese">
+    <section id="journey" className="py-24 bg-cream-100/60 border-y border-cream-200 relative z-10 font-burmese">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-2xl mx-auto mb-16">

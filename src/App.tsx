@@ -4,11 +4,10 @@
  */
 
 import { useState, useEffect } from "react";
-import { Leaf, Menu, X, ArrowRight, BookOpen, Clock, Heart, Compass } from "lucide-react";
+import { Leaf, Menu, X, ArrowRight, Clock, Heart, Compass } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import AudioController from "./components/AudioController";
 import Timeline from "./components/Timeline";
-import BookReader from "./components/BookReader";
 import HealingCompass from "./components/HealingCompass";
 import NewsletterForm from "./components/NewsletterForm";
 
@@ -97,7 +96,6 @@ export default function App() {
             <a href="#hero" className="text-forest-800 hover:text-rust-500 transition-colors">ပင်မစာမျက်နှာ</a>
             <a href="#journey" className="text-forest-800 hover:text-rust-500 transition-colors">ဖြတ်သန်းခဲ့သည့်ခရီး</a>
             <a href="#philosophy" className="text-forest-800 hover:text-rust-500 transition-colors">ခံယူချက်</a>
-            <a href="#library" className="text-forest-800 hover:text-rust-500 transition-colors">စာပေကုထုံးများ</a>
             <a href="#mindfulness" className="text-forest-800 hover:text-rust-500 transition-colors">နှလုံးသားအတွက် လေပြေ</a>
           </nav>
 
@@ -146,13 +144,6 @@ export default function App() {
                 className="block font-medium text-forest-800 hover:text-rust-500 transition-colors"
               >
                 ခံယူချက်
-              </a>
-              <a
-                href="#library"
-                onClick={() => setMobileMenuOpen(false)}
-                className="block font-medium text-forest-800 hover:text-rust-500 transition-colors"
-              >
-                စာပေကုထုံးများ
               </a>
               <a
                 href="#mindfulness"
@@ -213,10 +204,10 @@ export default function App() {
               className="flex flex-col sm:flex-row items-center justify-center gap-4 font-burmese"
             >
               <a
-                href="#library"
-                className="w-full sm:w-auto bg-forest-500 hover:bg-forest-800 text-cream-50 font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-xs sm:text-sm cursor-pointer"
+                href="#mindfulness"
+                className="w-full sm:w-auto bg-forest-500 hover:bg-forest-800 text-cream-50 font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-xs sm:text-sm cursor-pointer animate-duration-[4000ms]"
               >
-                <BookOpen className="w-4 h-4 text-cream-100" /> စာပေကုထုံးများကို ဖတ်ရှုရန်
+                <Compass className="w-4 h-4 text-cream-100 animate-spin-slow-medium" /> နှလုံးသားအတွက် လေပြေခံစားရန်
               </a>
               <a
                 href="#journey"
@@ -279,9 +270,6 @@ export default function App() {
             </div>
           </div>
         </section>
-
-        {/* Book Spine Shelf catalog display */}
-        <BookReader />
 
         {/* Motivational Quote healing board drawer */}
         <HealingCompass />
